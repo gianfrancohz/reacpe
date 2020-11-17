@@ -5,7 +5,7 @@ and calculates reactivity on real time.
 This software is part of a system whith includes a ionization chamber CNEA
 model CIC-41, a Keithley 6517B electrometer.
 
-![Interfaz de la aplicación](https://github.com/6ianco/reacpe/tree/main/icon/interfaz.png)
+![Interfaz de la aplicación](https://github.com/6ianco/reacpe/blob/main/icon/interfaz.png)
 
 Dependencies:
 
@@ -21,7 +21,7 @@ para establecer comunicación serial.
 
 Permisos para uso en GNU/Linux con cable serial (RS232-USB) TRENDNET:
 
-![ll /dev/ttyUSB0](https://github.com/6ianco/reacpe/tree/main/icon/lsttyUSB0.png)
+![ll /dev/ttyUSB0](https://github.com/6ianco/reacpe/blob/main/icon/lsttyUSB0.png)
 
 ```bash
 sudo usermod -a -G tty gianfranco
