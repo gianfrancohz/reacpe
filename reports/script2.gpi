@@ -1,0 +1,63 @@
+set terminal pdf
+set output 'subcritico_n08b.pdf'
+#set ytics nomirror
+#set y2tics
+
+set title "Mediciones en subcrítico"
+set grid
+set xlabel "Tiempo (s)"
+set ylabel "Corriente de la CIC-2 en B6 (A)"
+#set y2label "Reactividad ($)"
+
+set logscale y
+set format y "%0.1tE%+02T"
+set yrange [1e-8:1e-5]
+set xrange [3000:7000]
+set label "BC1(65%)" at 6500,1e-6 rotate by 90
+set label "BC1(60%)" at 6200,3e-7 rotate by 90
+set label "BC1(55%)" at 5800,1.5e-7 rotate by 90
+set label "BC1(50%)" at 5550,9e-8 rotate by 90
+set label "BC1(25%)" at 5300,8e-8 rotate by 90
+set label "BS3(100%)" at 4900,3.5e-8 rotate by 90
+set label "BS3(75%)" at 4500,3e-8 rotate by 90
+set label "BS3(50%)" at 4000,3e-8 rotate by 90
+set label "BS2(100%)" at 3500,3e-8 rotate by 90
+plot "R29-10-2020_09h05m46.dat" u 1:2 w l not
+
+
+
+#set output 'N07D_calibracion2.pdf'
+#set xrange [0:3500]
+#plot "R_fecha_19-09-2019_parte1.txt" u 1:2 w l t "Corriente", "" u 1:3 w l axes x1y2 t "Reactividad"
+
+# Extracción de los berilios
+#set xrange [16000:17500]
+#set format y "%0.1tE%+02T"
+#set format y2 "%0.1tE%+02T"
+#set y2label "Corriente"
+#unset y2tics
+#set output 'extraccion_berilios.pdf'
+#set title 'Extracción de los reflectores de berilio en el N07D'
+#plot "R_fecha_19-09-2019hora_12-32-12.txt" u 1:2 w l t "Corriente"
+
+
+
+
+# Mediciones de la tarde
+# puesta a crítico del reactor
+#set key top left box
+#unset xrange
+#set ytics nomirror
+#set y2tics
+#unset format y2
+#set output 'N07D_sinBe_aprox_crit.pdf'
+#set title "Calibración N07D sin berilios"
+#set y2range [-1:0.5]
+#set logscale y
+#set y2label "Reactividad ($)"
+#plot "R_fecha_19-09-2019_parte2.txt" u 1:2 w l t "Corriente", "" u 1:3 w l axes x1y2 t "Reactividad"
+
+#set output "N07D_sinBe_aprox_crit2.pdf"
+#set xrange [20500:22500]
+#plot "R_fecha_19-09-2019_parte2.txt" u 1:2 w l t "Corriente", "" u 1:3 w l axes x1y2 t "Reactividad"
+
