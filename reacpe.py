@@ -1,6 +1,6 @@
 import sys
 from datetime import datetime
-from PyQt4 import QtCore, QtGui, uic
+from PyQt5 import QtCore, QtGui, uic
 
 import time
 import pyqtgraph as pg
