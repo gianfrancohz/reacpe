@@ -4,7 +4,7 @@
 that shows measured current from a ionization chamber
 and calculates reactivity in real time using inverse kinetic method.
 The software also allows source estimation according to
-![Hoogenboom 1988](https://doi.org/10.1016/0306-4549(88)90059-X)
+![Hoogenboom 1988](https://www.sciencedirect.com/science/article/pii/030645498890059X)
 for reactivity measurements on subcritical states.
 This software is part of a system which includes a compesated ionization chamber
 and a Keithley 6517B electrometer.
